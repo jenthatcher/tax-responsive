@@ -1,6 +1,7 @@
 
 html {
     font-size: 16px;
+    line-height: 1.4px;
 }
 
 body {
@@ -14,10 +15,9 @@ body {
 }
 
 header {
-    background: url(../img/jubilee-hero.png) center no-repeat #efeeef;
+    background: url(../img/hero.png) center no-repeat #efeeef;
     min-height: 600px;
     background-size: cover;
-    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -26,10 +26,20 @@ header {
 }
 
 .full-width {
-    padding: 5%;
-    max-width: 1200px;
-    width: 90%;
+    padding: 0%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 0;
 
+}
+
+.half-width {
+    display: flex;
+    width: 100%;
+    flex-flow: row wrap;
+    
 
 }
 
@@ -41,9 +51,7 @@ header h1 {
     font-size: 3.125em;
     font-weight: 700;
     margin: 0 5%;
-    display: flex;
-    align-items: center;
-    text-align: center;
+
 }
 
 
@@ -61,10 +69,8 @@ header h1 {
 }
 
 header nav {
-    display: flex;
-    align-items: center;
     padding: 75px 25px;
-    flex-flow: row wrap;
+    
 
 }
 
@@ -72,14 +78,13 @@ header nav ul {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    flex-flow: row;
     width: 80%;
 }
 
  header nav ul li {
     display: flex;
-    align-items: center;
-    flex-flow: row;
-    justify-content: space-around;
+    align-items: left;
 }
 header nav ul li a {
     color: #828282;
@@ -95,9 +100,7 @@ ul {
     margin: 0;
     padding: 0;
 }
-li {
-    display: flex;
-}
+
 header h2 {
     display: flex;
     flex-flow: row wrap;
@@ -107,6 +110,8 @@ header h2 {
     font-family: 'lora'; 
     line-height: 80px;
     padding: 20px 0 20px 25px;
+    margin-top: 0;
+    width: 80%;
 }
 
 header span {
@@ -116,6 +121,7 @@ header span {
 
 #about .full-width {
     padding: 80px 0;
+    width: 100%;
 }
 
 #about h2 {
@@ -123,6 +129,7 @@ header span {
     color: #2b2b2b;
     font-size: 28px;
     padding-left: 50px;
+    width: 80%;
 }
 
 #about p {
@@ -131,7 +138,7 @@ header span {
     color: #7f7f7f;
     line-height: 40px;
     padding-left: 50px;
-    padding-right: 50px;
+
 }
 
 /***** WORK *****/
@@ -142,15 +149,20 @@ header span {
 }
 
 #work .full-width {
-    padding: 140px 0;
+    width: 100%;
+    flex-flow: column wrap;
+    justify-content: center;
+    display: flex;
+    align-items: center;
 }
 
 #work-img {
     padding-bottom: 30px;
+    align-items: center;
 }
 
 #work h3 {
-    font-size: 24px;
+    font-size: 1.5em;
     line-height: 32px;
     color: #2b2b2b;
     font-family: 'source sans pro';
@@ -160,7 +172,7 @@ header span {
 }
 
 #work p {
-    font-size: 18px;
+    font-size: 1.125em;
     line-height: 30px;
     font-family: 'lora';
     color: #2b2b2b;
@@ -174,6 +186,7 @@ header span {
 }
 #contact .full-width {
     padding: 110px 0;
+    width: 100%;
 }
 
 #contact-image {
@@ -196,13 +209,13 @@ header span {
     font-family: 'lora';
     color: #2b2b2b;
     line-height: 44px;
-    font-size: 36px;
+    font-size: 2.25em;
 }
 
 #contact #email-header {
     color: #2b2b2b;
     line-height: 44px;
-    font-size: 28px;
+    font-size: 1.75em;
     font-family: 'source sans pro';
     margin: -30px 0 5px 0;
     font-weight: 400;
@@ -211,7 +224,7 @@ header span {
 
 #contact #socialmedia-header {
     font-weight: bold;
-    font-size: 29px;
+    font-size: 1.81em;
     font: 'source sans pro';
     text-decoration-line: none;
 }
@@ -219,7 +232,7 @@ header span {
 #contact a {
     color: #828282;
     text-decoration: none;
-    font-size: 28px;
+    font-size: 1.75em;
     font-family: 'source sans pro';
 }
 
