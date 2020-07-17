@@ -1,0 +1,225 @@
+
+html {
+    font-size: 16px;
+}
+
+body {
+    color: #2b2b2b;
+    font-family: 'Source sans pro', 'sans-serif'; 
+    font-size: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: row wrap;
+}
+
+header {
+    background: url(../img/jubilee-hero.png) center no-repeat #efeeef;
+    min-height: 600px;
+    background-size: cover;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    text-align: center;
+}
+
+.full-width {
+    padding: 5%;
+    max-width: 1200px;
+    width: 90%;
+
+
+}
+
+
+
+header h1 {
+    color: #bbc085;
+    font-family: 'Lora', serif;
+    font-size: 3.125em;
+    font-weight: 700;
+    margin: 0 5%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+
+/***** BASE STYLES *****/
+* {
+    box-sizing: border-box;
+  }
+
+
+
+#about, #work, #contact {
+    display: flex;
+    align-items: center;
+    
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+    padding: 75px 25px;
+    flex-flow: row wrap;
+
+}
+
+header nav ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 80%;
+}
+
+ header nav ul li {
+    display: flex;
+    align-items: center;
+    flex-flow: row;
+    justify-content: space-around;
+}
+header nav ul li a {
+    color: #828282;
+    font-family: 'source sans pro';
+    font-size: 1.125em;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding-right: 70px;
+    
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+li {
+    display: flex;
+}
+header h2 {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    color: #9b9b9b;
+    font-size: 3.125em;
+    font-family: 'lora'; 
+    line-height: 80px;
+    padding: 20px 0 20px 25px;
+}
+
+header span {
+    color: #2b2b2b;
+}
+/***** ABOUT *****/
+
+#about .full-width {
+    padding: 80px 0;
+}
+
+#about h2 {
+    font-family: 'lora';
+    color: #2b2b2b;
+    font-size: 28px;
+    padding-left: 50px;
+}
+
+#about p {
+    font-family: 'source sans pro';
+    font-size: 21px;
+    color: #7f7f7f;
+    line-height: 40px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+/***** WORK *****/
+
+#work {
+    background-color:#bbc085;
+    text-align: center; 
+}
+
+#work .full-width {
+    padding: 140px 0;
+}
+
+#work-img {
+    padding-bottom: 30px;
+}
+
+#work h3 {
+    font-size: 24px;
+    line-height: 32px;
+    color: #2b2b2b;
+    font-family: 'source sans pro';
+    margin: 0 auto;
+    padding-top: 50px;
+   
+}
+
+#work p {
+    font-size: 18px;
+    line-height: 30px;
+    font-family: 'lora';
+    color: #2b2b2b;
+    padding: 0 50px;
+}
+
+/***** CONTACT *****/
+
+#contact {
+    background-color: #ebebeb;
+}
+#contact .full-width {
+    padding: 110px 0;
+}
+
+#contact-image {
+    border: #ffffff 12px solid;
+    margin-left: 25px;
+}
+
+#contact h2, #contact #email-header, #contact #socialmedia-header, #contact ul  {
+    padding-left: 115px;
+    padding-top: 20px;
+}
+
+#contact #envelope {
+    padding: 0 10px 0 115px;
+}
+
+
+    
+#contact h2 {
+    font-family: 'lora';
+    color: #2b2b2b;
+    line-height: 44px;
+    font-size: 36px;
+}
+
+#contact #email-header {
+    color: #2b2b2b;
+    line-height: 44px;
+    font-size: 28px;
+    font-family: 'source sans pro';
+    margin: -30px 0 5px 0;
+    font-weight: 400;
+
+} 
+
+#contact #socialmedia-header {
+    font-weight: bold;
+    font-size: 29px;
+    font: 'source sans pro';
+    text-decoration-line: none;
+}
+
+#contact a {
+    color: #828282;
+    text-decoration: none;
+    font-size: 28px;
+    font-family: 'source sans pro';
+}
+
