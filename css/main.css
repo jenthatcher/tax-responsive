@@ -32,6 +32,7 @@ header {
     justify-content: space-evenly;
     align-items: center;
     margin: 0;
+    width: 100%;
 
 }
 
@@ -46,11 +47,15 @@ header {
 
 
 header h1 {
+    display: flex;
+    align-items: center;
     color: #bbc085;
     font-family: 'Lora', serif;
     font-size: 3.125em;
     font-weight: 700;
-    margin: 0 5%;
+    padding: 25px 0 0 25px;
+    text-align: center;
+
 
 }
 
@@ -121,20 +126,20 @@ header span {
 
 #about .full-width {
     padding: 80px 0;
+    margin: 5%;
     width: 100%;
 }
 
 #about h2 {
     font-family: 'lora';
     color: #2b2b2b;
-    font-size: 28px;
-    padding-left: 50px;
+    font-size: 1.75em;
     width: 80%;
 }
 
 #about p {
     font-family: 'source sans pro';
-    font-size: 21px;
+    font-size: 1.31em;
     color: #7f7f7f;
     line-height: 40px;
     padding-left: 50px;
@@ -154,6 +159,7 @@ header span {
     justify-content: center;
     display: flex;
     align-items: center;
+    margin: 5%;
 }
 
 #work-img {
@@ -236,3 +242,97 @@ header span {
     font-family: 'source sans pro';
 }
 
+
+/*****Media queries****/
+/*****Tablet styles*****/
+
+@media all and (min-width: 768px) {
+    header h1 {
+        padding: 0px;
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    .full-width {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin: 5%;
+    }
+
+    .half-width {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    nav ul a {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        padding-left: 20px;
+    
+    }
+
+}
+
+
+/*****Desktop styles*****/
+
+@media all and (min-width: 1200px) {
+
+
+    .full-width {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    
+    }
+
+    .half-width {
+        display: flex;
+        justify-content: center;
+        width: 50%;
+    }
+
+    .third-width {
+        width: 33%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    header h1 {
+        display: flex;
+        margin: 0;
+        padding: 0;
+        align-items: left;
+        width: 40%;
+    }
+
+    header nav {
+        width: 30%;
+    }
+
+    header nav ul {
+        width: 30%;
+    }
+
+    #about h2 {
+        display: flex;
+        justify-content: left;
+        align-items: left;
+    }
+
+    #work .full-width {
+        display: flex;
+        flex-direction: row;
+    }
+
+    #contact-info .half-width {
+        display: flex;
+        justify-content: space-evenly;
+    }
+}
