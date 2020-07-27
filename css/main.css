@@ -268,36 +268,85 @@ header span {
 /*****Tablet styles*****/
 
 @media all and (min-width: 768px) {
-    header h1 {
-        padding: 0px;
-        display: flex;
-        justify-content: flex-start;
-    }
 
-    .full-width {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-    }
-
-    .half-width {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 50%;
-    }
-
-    nav ul a {
-        display: flex;
-        align-items: center;
-        justify-content: space-around;
-        padding-left: 20px;
-    
-    }
-
+.full-width {
+    width: 100%;
 }
 
+.half-width {
+    width: 50%;
+}
+
+.third-width {
+    width: 33%;
+    display: flex;
+    flex-direction: column;
+}
+
+/***** Header *****/
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    min-height: 400px;
+    
+}
+
+header h1 {
+ text-align: left;
+}
+
+header nav {
+    width: 30%;
+}
+
+
+nav ul a {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-left: 20px;
+}
+
+header h2 {
+    text-align: left; 
+    padding: 0;   
+}
+
+/***** About *****/
+
+#about .half-width {
+    display: flex;
+    justify-content: left;
+    flex-direction: row;
+}
+
+/***** Work *****/
+
+#work .third-width {
+    flex-direction: column;
+}
+}
+
+/***** contact *****/
+
+
+#contact .half-width {
+    width: 40%;
+}
+
+#contact .contact-info . .half-width {
+    display: flex;
+    flex-direction: row;
+}
+
+#contact .contact-link {
+    padding-left: 20px;
+    justify-content: left;
+}
+
+}
 
 /*****Desktop styles*****/
 
@@ -305,16 +354,11 @@ header span {
 
 
     .full-width {
-        display: flex;
-        justify-content: center;
-        align-items: center;
         width: 100%;
     
     }
 
     .half-width {
-        display: flex;
-        justify-content: center;
         width: 50%;
     }
 
@@ -325,7 +369,6 @@ header span {
     }
 
     header h1 {
-        display: flex;
         margin: 0;
         padding: 0;
         align-items: left;
@@ -341,9 +384,7 @@ header span {
     }
 
     #about h2 {
-        display: flex;
-        justify-content: left;
-        align-items: left;
+        text-align: left;
     }
 
     #work .full-width {
@@ -356,3 +397,4 @@ header span {
         justify-content: space-evenly;
     }
 }
+
