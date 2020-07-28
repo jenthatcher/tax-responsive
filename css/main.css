@@ -116,7 +116,6 @@ header span {
 
 #about .full-width {
     padding: 40px 20px;
-    width: 100%;
 }
 
 #about h2 {
@@ -125,7 +124,7 @@ header span {
     font-size: 1.75em;
     line-height: 40px;
     width: 80%;
-    text-align: center;
+    text-align: left;
     
 }
 
@@ -134,7 +133,7 @@ header span {
     font-size: 1.31em;
     color: #7f7f7f;
     line-height: 40px;
-    padding: 10px;
+    padding: 10px 30px 10px 30px;
     margin: 10px;
 
 }
@@ -148,8 +147,6 @@ header span {
 }
 
 #work .full-width {
-    width: 100%;
-    flex-flow: column wrap;
     justify-content: center;
     display: flex;
     align-items: center;
@@ -186,7 +183,6 @@ header span {
 }
 #contact .full-width {
     padding: 20px;
-    width: 100%;
     display: flex;
     justify-content: center;
 }
@@ -198,7 +194,7 @@ header span {
 }
 
 #contact figure img {
-    max-width: 100%;
+    max-width: 90%;
     margin: 0;
     border: #ffffff 12px solid;
 }
@@ -269,9 +265,6 @@ header span {
 
 @media all and (min-width: 768px) {
 
-.full-width {
-    width: 100%;
-}
 
 .half-width {
     width: 50%;
@@ -280,7 +273,7 @@ header span {
 .third-width {
     width: 33%;
     display: flex;
-    flex-direction: column;
+    flex-flow: row wrap;
 }
 
 /***** Header *****/
@@ -295,23 +288,25 @@ header {
 
 header h1 {
  text-align: left;
+ margin: 0px;
+ padding-left: 30px;
+ 
 }
 
 header nav {
-    width: 30%;
+    width: 100%;
+    justify-content: space-between;
+    margin: 0px;
+    align-items: right;
 }
 
-
-nav ul a {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    padding-left: 20px;
+header nav ul {
+    justify-content: space-between;
 }
 
 header h2 {
     text-align: left; 
-    padding: 0;   
+    padding: 40px 0px 0px 0px;   
 }
 
 /***** About *****/
@@ -322,23 +317,41 @@ header h2 {
     flex-direction: row;
 }
 
+#about h2 {
+    width: 100%;
+    padding-left: 30px;
+}
+
+#about p {
+    width: 100%;
+}
+
 /***** Work *****/
 
+#work .full-width {
+    flex-flow: row wrap;
+}
+
 #work .third-width {
-    flex-direction: column;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
 }
-}
+
 
 /***** contact *****/
 
-
-#contact .half-width {
-    width: 40%;
+#contact .full-width {
+    padding-top: 50px;
 }
 
-#contact .contact-info . .half-width {
+#contact .half-width {
+    width: 50%;
+}
+
+#contact .contact-info, .half-width {
     display: flex;
-    flex-direction: row;
+    flex-flow: row wrap;
 }
 
 #contact .contact-link {
@@ -351,22 +364,6 @@ header h2 {
 /*****Desktop styles*****/
 
 @media all and (min-width: 1200px) {
-
-
-    .full-width {
-        width: 100%;
-    
-    }
-
-    .half-width {
-        width: 50%;
-    }
-
-    .third-width {
-        width: 33%;
-        display: flex;
-        flex-direction: column;
-    }
 
     header h1 {
         margin: 0;
