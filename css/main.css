@@ -365,33 +365,60 @@ header h2 {
 
 @media all and (min-width: 1200px) {
 
+    header {
+        min-height: 600px;
+    }
+
     header h1 {
-        margin: 0;
-        padding: 0;
-        align-items: left;
-        width: 40%;
+        padding-bottom: 100px;
     }
 
     header nav {
-        width: 30%;
+        padding-bottom: 100px;
     }
 
-    header nav ul {
-        width: 30%;
+    header h2 {
+        padding-top: 0px;
     }
 
+    /***** About *****/
+
+    #about {
+        min-height: 400px;
+    }
     #about h2 {
-        text-align: left;
+        margin-left: 10px;
+        font-size: 2em;
+        text-align: center;
+        padding-bottom: 20px;
     }
 
-    #work .full-width {
-        display: flex;
-        flex-direction: row;
+    #about p {
+        font-size: 1.5em;
     }
 
-    #contact-info .half-width {
-        display: flex;
-        justify-content: space-evenly;
-    }
+   /***** Work *****/
+
+   #work {
+       min-height: 400px;
+   }
+ 
+   #work h3 {
+       font-size: 1.7em;
+       padding-bottom: 30px;
+   }
+
+   #work p {
+       font-size: 1.3em;
+   }
+   
+   /***** contact *****/
+
+   #contact-info .half-width {
+       display: flex;
+       align-items: flex-end;
+       padding-left: 50px;
+   }
+
 }
 
