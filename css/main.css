@@ -19,8 +19,7 @@ header {
     background-size: cover;
     min-height: 600px;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     flex-flow: row wrap;
     text-align: center;
 }
@@ -30,7 +29,7 @@ header {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-evenly;
-    align-items: center;
+    align-items: flex-start;
     margin: 0;
     width: 100%;
 
@@ -178,6 +177,7 @@ header span {
     background-color: #ebebeb;
     display: flex;
     justify-content: center;
+    width: 100%;
 
     
 }
@@ -191,12 +191,14 @@ header span {
     margin: 0;
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 #contact figure img {
     max-width: 90%;
     margin: 0;
     border: #ffffff 12px solid;
+    justify-content: center;
 }
 
 #contact #envelope  {
@@ -266,6 +268,7 @@ header span {
 @media all and (min-width: 768px) {
 
 
+    
 .half-width {
     width: 50%;
 }
@@ -274,6 +277,7 @@ header span {
     width: 33%;
     display: flex;
     flex-flow: row wrap;
+    align-items: flex-start;
 }
 
 /***** Header *****/
@@ -283,6 +287,7 @@ header {
     display: flex;
     justify-content: space-between;
     min-height: 400px;
+    padding: 20px;
     
 }
 
@@ -311,6 +316,7 @@ header h2 {
 
 /***** About *****/
 
+
 #about .half-width {
     display: flex;
     justify-content: left;
@@ -324,18 +330,19 @@ header h2 {
 
 #about p {
     width: 100%;
+    margin: 0;
 }
 
 /***** Work *****/
 
 #work .full-width {
     flex-flow: row wrap;
+    align-items: flex-start;
 }
 
 #work .third-width {
     display: flex;
     flex-flow: row wrap;
-    align-items: center;
 }
 
 
@@ -349,14 +356,21 @@ header h2 {
     width: 50%;
 }
 
-#contact .contact-info, .half-width {
+#contact .contact-info .half-width {
     display: flex;
     flex-flow: row wrap;
+    text-align: flex-start;
+    justify-content: flex-start;
 }
 
 #contact .contact-link {
     padding-left: 20px;
-    justify-content: left;
+    justify-content: center;
+}
+
+#contact .half-width img#contact-img  {
+    align-items: center;
+    justify-content: center;
 }
 
 }
@@ -367,6 +381,7 @@ header h2 {
 
     header {
         min-height: 600px;
+        padding-top: 30px;
     }
 
     header h1 {
