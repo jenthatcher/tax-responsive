@@ -267,7 +267,9 @@ header span {
 
 @media all and (min-width: 768px) {
 
-
+.full-width {
+    align-items: center;
+}
     
 .half-width {
     width: 50%;
@@ -350,6 +352,7 @@ header h2 {
 
 #contact .full-width {
     padding-top: 50px;
+    align-items: center;
 }
 
 #contact .half-width {
